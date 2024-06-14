@@ -170,6 +170,17 @@ header #logo img {
   color: var(--light-gray);
 }
 
+.drinks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drinks-content h2 {
+  margin-bottom: 8rem;
+  color: var(--light-gray);
+}
+
 .btn button {
   width: 230px;
   height: 60px;
@@ -448,28 +459,25 @@ body {
 
 /*MODAL*/
 .ButtonModal {
-  padding: 25px 60px;
+  padding: 25px;
   display: flex;
-  background-color: tomato;
+  background-color: var(--red);
   border-radius: 20px;
-  color: #fff;
+  color: var(--white);
+  font-weight: bold;
   font-size: 20px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: 0.2s ease;
   position: flex;
-  margin-top: 6rem;
-  margin-left: 96rem;
   align-items: center;
   justify-content: center;
-  top: 151rem;
-  margin-bottom: -16rem;
-
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .ButtonModal:hover {
-  background-color: #ff4c2c;
-
+  background-color: var(--white);
+  color: var(--red);
+  transition: 0.2s ease;
 }
 
 .modal-container {
