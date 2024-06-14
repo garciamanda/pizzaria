@@ -144,6 +144,32 @@ header #logo img {
   font-weight: 400;
 }
 
+.reme-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reme .products-container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+  padding: 0 0 20rem 1rem;
+}
+
+.reme-content h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.reme-content h2 {
+  margin-bottom: 4rem;
+  color: var(--light-gray);
+}
+
 .btn button {
   width: 230px;
   height: 60px;
@@ -437,24 +463,27 @@ body {
   justify-content: center;
   top: 151rem;
   margin-bottom: -16rem;
-  
+
   transform: translate(-50%, -50%);
 }
 
 .ButtonModal:hover {
   background-color: #ff4c2c;
-  
+
 }
 
 .modal-container {
   width: 100vw;
-  height: 1rem; /* Altura reduzida */
+  height: 1rem;
+  /* Altura reduzida */
   position: absolute;
-  top: 139rem; /* Fixo no topo */
+  top: 139rem;
+  /* Fixo no topo */
   left: 0;
   background-color: #0000004b;
   z-index: 999;
-  display: flex; /* Alterado para flexbox */
+  display: flex;
+  /* Alterado para flexbox */
   align-items: center;
   justify-content: center;
   display: none;
@@ -465,7 +494,7 @@ body {
   min-width: 400px;
   min-height: 90rem;
   background-color: #fffffff6;
-  
+
   padding: 50px;
   border-radius: 10px;
 }
@@ -510,7 +539,7 @@ body {
   animation: animate-modal .3s;
 }
 
-.normal-section + .normal-section {
+.normal-section+.normal-section {
   margin-top: 80px;
 }
 
@@ -538,7 +567,8 @@ body {
 }
 
 .product-image {
-  width: 240px; /* Flex wrap coloca 2 posters por linha, pq a seção tem 600px */
+  width: 240px;
+  /* Flex wrap coloca 2 posters por linha, pq a seção tem 600px */
   height: 144px;
 }
 
@@ -680,7 +710,7 @@ body {
     text-align: center;
   }
 
-  .schedule-item + .schedule-item {
+  .schedule-item+.schedule-item {
     margin-top: 12px;
   }
 
@@ -736,6 +766,6 @@ body {
   }
 
   .movie-title-medium {
-    margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 }
