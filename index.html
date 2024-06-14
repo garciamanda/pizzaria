@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fody Slider</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo" id="logo">
+      <img src="images/1717788651149.png" alt="">
+    </div>
+
+    <div class="avatar" id="avatar">
+      <ion-icon name="person-circle-outline" id="user-avatar" style="display: none;"></ion-icon> 
+      <span id="username-display" style="display: none;"></span>
+    </div>
+
+    <nav class="navbar">
+      <a href="#home" style="--i:0">Home</a>
+      <a href="#footer" style="--i:0">Sobre Nós</a>
+      <a href="contatos.html" style="--i:4">Contatos</a>
+      <a href="suportes.html" style="--i:5">Suporte</a>
+      <button id="btnLogin-popup" class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+  <main>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Pizzaria Comeu Morreu 😈</h1>
+        <h2>Venha conhecer nossa pizzaria</h2>
+        <div class="btn">
+          <button class="btnpedido" id="btnpedido">Peça Agora</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="tranding">
+      <div class="container">
+        <h3 class="text-center section-subheading">Pizzaria Comeu Morreu</h3>
+        <h1 class="text-center section-heading">Cardápio Principal</h1>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-1.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">R$25</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Special Pizza
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-2.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">R$36</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Meat Ball
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-3.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">R$40</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Burger
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-4.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">R$15</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Frish Curry
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-5.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$15</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Pane Cake
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-6.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">R$42</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Vanilla cake
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-7.png" alt="Tranding">
+                
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">R$38</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Straw Cake
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <button onclick="openModal()" class="ButtonModal">Fazer pedido</button>
+    </section>
+    
+  </main>
+  
+
+  <div id="modal-container" class="modal-container">
+    <div class="modal">
+      
+      <h1>Menu</h1>
+      <div class="main-header">
+        <hr>
+        <h1 class="movie-title-large movie-title">Pratos:</h1>
+        <button class="fechar" id="fechar">X</button>
+      </div>
+  
+      <main class="main-section">
+        <section class="container normal-section">
+          <h2 class="section-title">Produtos</h2>
+  
+          <div class="products-container">
+            <div class="movie-product">
+              <strong class="product-title">Poster 1</strong>
+            
+              <img src="/images/tranding-food-1.png" alt="Poster 1" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$29,99</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+  
+            <div class="movie-product">
+              <strong class="product-title">Poster 2</strong>
+            
+              <img src="/images/tranding-food-2.png" alt="Poster 2" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$39,99</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+    
+            <div class="movie-product">
+              <strong class="product-title">Poster 3</strong>
+             
+              <img src="/images/tranding-food-3.png" alt="Poster 3" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$19,99</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+    
+            <div class="movie-product">
+              <strong class="product-title">Poster 4</strong>
+           
+              <img src="/images/tranding-food-4.png" alt="Poster 4" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$79,99</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="container normal-section">
+          
+  
+          <div class="products-container">
+            <div class="movie-product">
+              <strong class="product-title">Poster5</strong>
+            
+              <img src="images/tranding-food-5.png" alt="Poster5" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$39,90</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+  
+            <div class="movie-product">
+              <strong class="product-title">Poster6</strong>
+           
+              <img src="images/tranding-food-6.png" alt="Miniatura" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$69,90</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+
+            <div class="movie-product">
+              <strong class="product-title">Poster7</strong>
+           
+              <img src="images/4queijos.png" alt="Miniatura" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$69,90</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+
+            <div class="movie-product">
+              <strong class="product-title">Poster6</strong>
+           
+              <img src="images/chocolate.png" alt="Miniatura" class="product-image">
+              <div class="product-price-container">
+                <span class="product-price">R$69,90</span>
+                <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="container normal-section">
+          <h2 class="section-title">Carrinho</h2>
+  
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th class="table-head-item first-col">Item</th>
+                <th class="table-head-item second-col">Preço</th>
+                <th class="table-head-item third-col">Quantidade</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <!-- <tr class="cart-product">
+                <td class="product-identification">
+                  <img src="images/produto2.png" alt="Miniatura" class="cart-product-image">
+                  <strong class="cart-product-title">Miniatura</strong>
+                </td>
+                <td>
+                  <span class="cart-product-price">R$69,90</span>
+                </td>
+                <td>
+                  <input type="number" value="2" min="0" class="product-qtd-input">
+                  <button type="button" class="remove-product-button">Remover</button>
+                </td>
+              </tr>
+              <tr class="cart-product">
+                <td class="product-identification">
+                  <img src="images/poster3.png" alt="Poster 3" class="cart-product-image">
+                  <strong class="cart-product-title">Poster 3</strong>
+                </td>
+                <td>
+                  <span class="cart-product-price">R$19,99</span>
+                </td>
+                <td>
+                  <input type="number" value="1" min="0" class="product-qtd-input">
+                  <button type="button" class="remove-product-button">Remover</button>
+                </td>
+              </tr> -->
+            </tbody>
+  
+
+            <tfoot>
+              <tr>
+                <td colspan="3" class="cart-total-container">
+                  <strong>Total</strong>
+                  <span>R$0,00</span>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+  
+          <button type="button" class="purchase-button"><a href="/ifood/tipo_de_pagamento.html">Finalizar Compra</a></button>
+        </section>
+      </main>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer" id="footer">
+      <h1>Sobre Nós</h1>
+      <p>Bem-vindo à Comeu Morreu, a pizzaria onde cada pedaço é uma explosão de sabor e alegria! Desde que abrimos
+        nossas portas, nossa missão tem sido oferecer uma experiência gastronômica incomparável para todos os amantes de
+        pizza.</p>
+    </div>
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
