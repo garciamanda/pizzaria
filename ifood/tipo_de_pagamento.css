@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b9b7b7;
+}
+
+.container {
+    max-width: 400px;
+    margin: 200px auto 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(3, 3, 3, 0.1);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    background-color: white;
+    color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+div i {
+    color: #110f0f;
+    font-size: 23px;
+    position: relative;
+    right: 14%;
+}
