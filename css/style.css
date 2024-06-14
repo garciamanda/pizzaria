@@ -179,6 +179,7 @@ header #logo img {
 .drinks-content h2 {
   margin-bottom: 8rem;
   color: var(--light-gray);
+  margin-top: 10rem;
 }
 
 .btn button {
