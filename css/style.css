@@ -88,7 +88,7 @@ header #logo img {
 }
 
 .home {
-  background-image: linear-gradient(rgba(29, 29, 29, 0.9), rgba(29, 29, 29, 0.9)), url(images/bg.jpeg);
+  background-image: linear-gradient(rgba(29, 29, 29, 0.9), rgba(29, 29, 29, 0.9)), url(/images/bg.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@ header #logo img {
 .drinks-content h2 {
   margin-bottom: 8rem;
   color: var(--light-gray);
-  margin-top: 10rem;
+  margin-top: 2.5rem;
 }
 
 .btn button {
