@@ -146,19 +146,23 @@ header #logo img {
   font-weight: 400;
 }
 
+#home .date{
+  margin-top: 12.5rem;
+}
+
 .reme-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/*
+
 #reme .products-container {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   gap: 2rem;
   padding: 0 0 20rem 1rem;
-}*/
+}
 
 .reme-content h1 {
   color: var(--primary);
@@ -168,8 +172,9 @@ header #logo img {
 }
 
 .reme-content h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
   color: var(--light-gray);
+  margin-top: 7rem;
 }
 
 .drinks-content {
