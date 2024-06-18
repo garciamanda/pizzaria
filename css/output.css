@@ -695,6 +695,14 @@ body {
     font-size: 36px;
   }
 
+  .modal-container img {
+    display: none;
+  }
+
+  .products-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .schedule-item {
     flex-wrap: wrap;
     text-align: center;
