@@ -347,6 +347,11 @@ body {
   object-fit: cover;
 }
 
+.tranding-slide-img {
+  border: #000;
+  border-radius: 10px;
+}
+
 .tranding-slide .tranding-slide-content {
   position: absolute;
   left: 0;
