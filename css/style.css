@@ -601,7 +601,7 @@ body {
   height: 26rem;
   object-fit: cover;
   margin-bottom: 6px;
-  border-radius: 6px;
+  border-radius: 30px;
 }
 
 .reme img {
@@ -831,5 +831,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .reme {
+    
   }
 }
