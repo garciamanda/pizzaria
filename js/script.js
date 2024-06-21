@@ -179,3 +179,55 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const addToCartButtons = document.querySelectorAll('.button-hover-background');
+  const cartItemsList = document.getElementById('cart-items');
+  const cartTotalSpan = document.getElementById('cart-total');
+
+  let cartItems = [];
+
+  function addToCart(productTitle, productPrice) {
+    const existingItem = cartItems.find(item => item.title === productTitle);
+
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cartItems.push({
+        title: productTitle,
+        price: productPrice,
+        quantity: 1
+      });
+    }
+
+  
+    renderCart();
+  }
+
+
+  function renderCart() {
+    cartItemsList.innerHTML = '';
+
+    cartItems.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.title} x ${item.quantity} - R$${(item.price * item.quantity).toFixed(2)}`;
+      cartItemsList.appendChild(li);
+    });
+
+    updateCartTotal();
+  }
+
+  function updateCartTotal() {
+    const total = cartItems.reduce((accumulator, item) => accumulator + (item.price * item.quantity), 0);
+    cartTotalSpan.textContent = `R$${total.toFixed(2)}`;
+  }
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const productContainer = this.closest('.movie-product');
+      const productTitle = productContainer.querySelector('.product-title').textContent;
+      const productPrice = parseFloat(productContainer.querySelector('.product-price').textContent.replace('R$', ''));
+
+      addToCart(productTitle, productPrice);
+    });
+  });
+});
