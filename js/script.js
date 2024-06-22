@@ -28,6 +28,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   }
 });
 
+
 function openModal() {
   const modal = document.getElementById('modal-container')
   modal.classList.add('mostrar')
@@ -229,5 +230,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
       addToCart(productTitle, productPrice);
     });
+  });
+});
+
+
+//
+
+
+const trendingSlides = document.querySelectorAll('.tranding-slide');
+
+
+trendingSlides.forEach((slide) => {
+  slide.addEventListener('click', (e) => {
+
+    const foodPrice = slide.querySelector('.food-price').textContent;
+    const foodName = slide.querySelector('.food-name').textContent;
+
+  
+    const cartItem = document.createElement('li');
+    cartItem.textContent = `${foodName} - ${foodPrice}`;
+
+  
+    document.getElementById('cart-items').appendChild(cartItem);
   });
 });
