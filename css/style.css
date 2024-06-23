@@ -608,14 +608,15 @@ body {
 
 .products-image-bebidas {
   width: 100%;
-  height: 26rem;
+  height: 25rem;
   object-fit: cover;
   margin-bottom: 6px;
   border-radius: 30px;
 }
 
 .reme img {
-  width: 35rem;
+  height: 100%;
+  width: 35rem auto;
 }
 
 .products-image {
