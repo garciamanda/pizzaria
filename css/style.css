@@ -38,7 +38,6 @@ html {
 }
 
 body {
-
   color: var(--black);
 }
 
@@ -252,6 +251,7 @@ footer {
   color: var(--white);
   padding: 20px 0;
   text-align: center;
+
 }
 
 .footer h1 {
@@ -622,7 +622,7 @@ body {
 }
 
 .reme img {
-  width: 25em;
+  width: 35rem;
 }
 
 .products-image {
@@ -766,7 +766,7 @@ body {
 
 
 /* For mobile devices (max-width: 768px) */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   /* Adjust the header layout */
   .header {
     flex-direction: column;
