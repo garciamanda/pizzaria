@@ -39,6 +39,8 @@ html {
 
 body {
   color: var(--black);
+  font-size: 1.6rem;
+  background: var(--bg);
 }
 
 header {
@@ -46,7 +48,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
+  padding: 5px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +105,6 @@ header #logo img {
   flex-direction: row;
 }
 
-
 .home-content button {
   background: #fff;
   color: var(--primary);
@@ -117,17 +118,10 @@ header #logo img {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.btn button:hover {
+.home-content button:hover {
   border: 1px solid #ffc506;
   background-color: transparent;
   color: #ffc506;
-}
-
-.home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
 }
 
 .home-content h1 {
@@ -135,6 +129,7 @@ header #logo img {
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  padding: 0 20px;
 }
 
 .home-content h3 {
@@ -144,7 +139,7 @@ header #logo img {
   text-transform: uppercase;
   margin-bottom: 1rem;
   border-radius: 10px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
 .home-content h2 {
@@ -153,9 +148,10 @@ header #logo img {
   text-transform: uppercase;
   margin-bottom: 1.2rem;
   font-weight: 400;
+  padding: 0 100px;
 }
 
-#home .date{
+#home .date {
   margin-top: 12.5rem;
 }
 
@@ -168,7 +164,7 @@ header #logo img {
 #reme .products-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 0 0 20rem 1rem;
 }
@@ -245,7 +241,6 @@ header #logo img {
   color: #fff;
 }
 
-
 footer {
   background-color: var(--red2);
   color: var(--white);
@@ -264,8 +259,6 @@ footer {
   max-width: 800px;
   margin: 0 auto;
 }
-
-
 
 ::-webkit-scrollbar {
   width: 1.3rem;
@@ -306,8 +299,6 @@ body {
 .text-center {
   text-align: center;
 }
-
-
 
 .section-heading {
   font-size: 3rem;
@@ -459,7 +450,9 @@ body {
 }
 
 .tranding-slider-control .slider-arrow::after {
-  content: '';.products-container {
+  content: '';
+
+  .products-container {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -572,7 +565,7 @@ body {
   animation: animate-modal .3s;
 }
 
-.content-bebidas{
+.content-bebidas {
   margin-top: -22rem;
 }
 
@@ -766,22 +759,25 @@ body {
 
 
 /* For mobile devices (max-width: 768px) */
+
 @media (max-width: 768px) {
+
+
   /* Adjust the header layout */
   .header {
     flex-direction: column;
     align-items: center;
   }
-  
+
   /* Adjust the navigation menu */
   .navbar {
     flex-direction: column;
   }
-  
+
   .navbar a {
     margin-bottom: 10px;
   }
-  
+
 
   /* Adjust the products layout */
   #reme .products-container {
@@ -790,12 +786,12 @@ body {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  #reme .product-price-container{
+  #reme .product-price-container {
     display: flex;
-    
+
   }
 
-  #reme .product-price-container{
+  #reme .product-price-container {
     padding-top: 1rem;
     flex-direction: column;
     display: flex;
@@ -803,7 +799,7 @@ body {
     margin-top: -13rem;
   }
 
-  #reme .product-price-container span{
+  #reme .product-price-container span {
     color: var(--red);
     font-weight: bold;
     font-size: 29px;
@@ -811,44 +807,44 @@ body {
     padding-bottom: 2rem;
   }
 
-  .content-bebidas{
+  .content-bebidas {
     margin-top: -16rem;
   }
 
   #reme .products-container img {
     display: flex;
     gap: 0.5rem;
-    min-height: 13rem ;
+    min-height: 13rem;
     width: auto;
     border-radius: 1rem;
   }
-  
+
   .movie-product {
     width: 40%;
     margin: 10px;
   }
-  
+
   /* Adjust the cart layout */
   #cart {
     padding: 20px;
   }
-  
+
   #cart-items {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   #cart-items li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
   }
-  
+
   #cart-items li:last-child {
     border-bottom: none;
   }
 
-  .button-hover-background{
+  .button-hover-background {
     height: 6rem;
     width: 16rem;
   }
