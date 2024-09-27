@@ -20,14 +20,12 @@
   --primary: #f58a26;
   --white: #ffffff;
   --bg: #f5f5f5;
-  --white: #fff;
   --red: #e50914;
   --yellow: #ebe711;
   --black: #141414;
   --red2: #a50c0c;
   --light-gray: #5a4747;
   --dark-gray: #333;
-  --white: #fff;
   --gray: #959595;
   --blue: #56c5db;
 }
@@ -613,11 +611,11 @@ body {
     height: 10.5rem;
   }
 
-  .texto-food {
-    font-size: 1.5rem;
-    line-height: 1.5rem !important;
-    color: rgba(107, 114, 128, 1);
-    font-family: "Roboto", sans-serif;
+  .food-text h2 {
+    color: var(--dark-gray);
+    font-size: 3rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
   }
 
   .image-food {
@@ -661,5 +659,10 @@ body {
   .food-box:hover {
     transform: translateY(-1rem);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .Spacing {
+    display: flex;
+    gap: 35px;
   }
 }
