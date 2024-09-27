@@ -22,16 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//avatar
-
-// login.js
-
 document.getElementById('login-form').addEventListener('submit', function(e) {
   e.preventDefault();
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  // Simple check for example purposes, replace with real authentication
   if (username === 'user' && password === 'password') {
       localStorage.setItem('loggedIn', 'true');
       localStorage.setItem('username', username);

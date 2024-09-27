@@ -4,6 +4,12 @@ const bairro = document.querySelector('#bairro');
 const cidade = document.querySelector('#cidade');
 const message = document.querySelector('#message');
 
+localStorage.setItem("cep", cep.value);
+localStorage.setItem("endereço", endereço.value);
+localStorage.setItem("bairro", bairro.value);
+localStorage.setItem("cidade", cidade.value);
+
+
 cep.addEventListener('focusout', async() => {
 
     try {
