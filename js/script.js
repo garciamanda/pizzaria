@@ -43,12 +43,42 @@ function openModal() {
 
 //login 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   var loginButton = document.getElementById('btnLogin-popup');
+//   loginButton.addEventListener('click', function () {
+//       window.location.href = 'login.html';
+//   });
+// });
+
+// login
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  var loginButton = document.getElementById('btnLogin-popup');
-  loginButton.addEventListener('click', function () {
-      window.location.href = 'login.html';
+  const wrapper = document.querySelector(".wrapper");
+  const loginLink = document.querySelector(".login-link");
+  const registerLink = document.querySelector(".register-link");
+  const iconClose = document.querySelector(".icon-close");
+
+  registerLink.addEventListener("click", () => {
+    wrapper.classList.add("active");
+  });
+
+  loginLink.addEventListener("click", () => {
+    wrapper.classList.remove("active");
+  });
+
+  wrapper.classList.add("active-popup");
+
+
+
+  iconClose.addEventListener("click", () => {
+    wrapper.classList.remove("active-popup");
+    window.location.href = "index.html";
   });
 });
+
 
 
 
@@ -128,4 +158,43 @@ trendingSlides.forEach((slide) => {
   
     document.getElementById('cart-items').appendChild(cartItem);
   });
+});
+
+// Selecionando os elementos do DOM
+const loginBtn = document.getElementById('btnLogin-popup');
+const loginPopup = document.getElementById('loginPopup');
+const registerPopup = document.getElementById('registerPopup');
+const showRegisterFormBtn = document.getElementById('showRegisterForm');
+const closeButtons = document.querySelectorAll('.close');
+
+// Função para abrir o popup de login
+loginBtn.addEventListener('click', function() {
+  loginPopup.style.display = 'block';
+});
+
+// Função para abrir o popup de registro quando clicar em "Registrar-se" no popup de login
+showRegisterFormBtn.addEventListener('click', function() {
+  loginPopup.style.display = 'none';
+  registerPopup.style.display = 'block';
+});
+
+// Função para fechar os popups
+closeButtons.forEach(button => {
+  button.addEventListener('click', function(event) {
+    const popupToClose = event.target.getAttribute('data-close');
+    if (popupToClose === 'login') {
+      loginPopup.style.display = 'none';
+    } else if (popupToClose === 'register') {
+      registerPopup.style.display = 'none';
+    }
+  });
+});
+
+// Fechar os popups se o usuário clicar fora deles
+window.addEventListener('click', function(event) {
+  if (event.target == loginPopup) {
+    loginPopup.style.display = 'none';
+  } else if (event.target == registerPopup) {
+    registerPopup.style.display = 'none';
+  }
 });
