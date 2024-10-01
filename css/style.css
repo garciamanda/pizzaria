@@ -219,9 +219,11 @@ header #logo img {
 footer {
   background-color: var(--red2);
   color: var(--white);
-  padding: 20px 0;
-  text-align: center;
-
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
 }
 
 .footer-logo i {
@@ -229,23 +231,10 @@ footer {
   font-size: 3rem;
 }
 
-.footer h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+.footer-logo i:hover {
+  color: var(--white);
+  cursor: pointer;
 }
-
-.footer p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#footer .footer-logo {
-  margin-right: 100rem;
-  width: 100px;
-  height: 100px;
-}
-
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
