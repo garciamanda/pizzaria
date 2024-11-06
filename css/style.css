@@ -683,26 +683,29 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 50vw;
-  height: 45vh;
+  height: 60vh;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 #loginup{
   text-align: center;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 #form_login{
-  margin-top: 45px;
+  margin-top: 30px;
 }
 #logo-login img {
-  width: 110px;
+  width: 93px;
+  height: 90px;
 }
+
 #logo-login{
   background-color: #a50c0c;
   border-radius: 50%;
-  width: 11.5vw;
+  width: 90px;
+  height: 90px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -710,10 +713,51 @@ body {
 
 #username, #password {
   width: 90%;
-  height: 35px;
+  height: 38px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  border: solid 1px rgba(128, 128, 128, 0.007);
+  background-color: #00000008;
+  border-radius: 5px;
+}
+
+#password{
+  margin-top: 10px;
+}
+
+#btn_login1{
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#easter-egg{
+  color: white;
+}
+
+#btn_login2{
+  width: 50%;
+  height: 38px;
+  background-color: #a50c0c;
+  color: white;
+  border: solid 1px rgba(128, 128, 128, 0.007);
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+#loginc_redes{
+  display: flex;
+}
+#loginc_redes > hr{
+  width: 24vw;
+  height: 1px;
+  margin-top: 23px;
+  color: #00000042;
+
 }
 
 /* Botão de fechar (X) */
