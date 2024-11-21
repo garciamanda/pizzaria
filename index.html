@@ -383,10 +383,10 @@
         
         <form id="form_login">
           <label for="username"></label>
-          <input type="text" id="username" name="username" placeholder="   Endereço de e-mail" required><br><br>
+          <input type="text" id="username" name="username" placeholder="Endereço de e-mail" required><br><br>
 
           <label for="password"></label>
-          <input type="password" id="password" name="password" placeholder="   Senha" required><br><br>
+          <input type="password" id="password" name="password" placeholder="Senha" required><br><br>
 
           <div id="btn_login1">
             <button type="submit" id="btn_login2">Login</button>
@@ -414,17 +414,28 @@
     <div id="registerPopup" class="popup">
       <div class="popup-content">
         <span class="close" data-close="register">&times;</span>
-        <h2>Registro</h2>
-        <form>
-          <label for="new-username">Usuário:</label>
-          <input type="text" id="new-username" name="new-username" required><br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br><br>
-          <label for="new-password">Senha:</label>
-          <input type="password" id="new-password" name="new-password" required><br><br>
-          <label for="confirm-password">Confirme a Senha:</label>
-          <input type="password" id="confirm-password" name="confirm-password" required><br><br>
-          <button type="submit">Registrar</button>
+        <div class="logo" id="logo-registro">
+          <img src="images/logo.png" alt="">
+        </div> 
+        <h2 id="registro">Registro</h2>
+        <form id="registroform">
+          <label for="usuario-reg"></label>
+          <input type="text" id="usuario-reg" name="new-username" placeholder="Usuario" required><br><br>
+
+          <label for="email-reg"></label>
+          <input type="email" id="email-reg" name="email" placeholder="Email" required><br><br>
+
+          <label for="senha-reg"></label>
+          <input type="password" id="senha-reg" name="new-password" placeholder="Senha"><br><br>
+
+          <label for="conf-reg"></label>
+          <input type="password" id="conf-reg" name="confirm-password" placeholder="Confirme sua senha" required><br><br>
+
+          <div id="btn_login1">
+            <button type="submit" id="btn_login2">Registrar-se</button>
+            <p id="easter-egg">.</p>
+            <p>Já tem uma conta? <button type="button" id="showRegisterForm">Voltar</button></p>
+          </div>
         </form>
       </div>
     </div>
