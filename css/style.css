@@ -788,13 +788,8 @@ body {
   margin-top: 100px;
 }
 
-<<<<<<< HEAD
 #form_login{
   margin-top: 20px;
-=======
-#form_login {
-  margin-top: 30px;
->>>>>>> 610c2885f3a94c000e20cc23f90fc9a9732e92c9
 }
 
 #logo-login img {
@@ -829,13 +824,8 @@ body {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
 #btn_login1{
   margin-top: 20px;
-=======
-#btn_login1 {
-  margin-top: 60px;
->>>>>>> 610c2885f3a94c000e20cc23f90fc9a9732e92c9
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -946,14 +936,9 @@ body {
   height: 90px;
 }
 
-<<<<<<< HEAD
 #logo-registro{
   background-color: #a50c0c;
   margin-top: 5px;
-=======
-#logo-registro {
-  margin-top: 30px;
->>>>>>> 610c2885f3a94c000e20cc23f90fc9a9732e92c9
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -992,15 +977,9 @@ body {
 
 #registroform input[type="text"],
 #registroform input[type="email"],
-<<<<<<< HEAD
 #registroform input[type="password"],
 #registroform input[type="file"]{
   margin-top: 5px;
-=======
-#registroform input[type="password"] {
-  margin-bottom: 30px;
-
->>>>>>> 610c2885f3a94c000e20cc23f90fc9a9732e92c9
 }
 
 #registroform {
