@@ -2,30 +2,58 @@
 <html lang="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/contatos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Contatos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/contatos2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>Contatos</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="logo" id="logo">
+      <img src="images/logo.png" alt="">
+    </div>
 
-    <header>
-        <div class="home">
-            <i class="fa-solid"></i></div>
-    </header>
+    <input type="checkbox" id="check">
+    <label for="check" class="menu">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class='bx bx-x' id="close-icon"></i>
+    </label>
 
-    <!--<footer>
-        <div class="media-class">
+    <nav class="navbar">
+      <a href="#home" style="--i:0">Home</a>
+      <a href="#footer" style="--i:4">Contatos</a>
+      <button id="btnLogin-popup" class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+  
+  <main>
+      <div id="sessaofeedback">
+          <h1>Sessão <br> Feedback</h1>
+      </div>
 
-            <ul class="links">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+      <div id="enviarfeedback">
+          <h2>mó rolê</h2>
+      </div>
+  </main>
 
-                <li><a href="http://discord.com"> <i class="fa-brands fa-discord"></i></a></li>
-            </ul>
+  <footer>
+    <div id="icons">
+      <ion-icon name="logo-facebook" id="face" class="icons"></ion-icon>
+      <ion-icon name="logo-instagram" id="insta" class="icons"></ion-icon>
+      <ion-icon name="logo-tiktok" id="ttk" class="icons"></ion-icon>
+    </div>
+    
+    <div id="creditos">
+      <p>Aqui a Amanda que manda...</p>
+      <p>Amanda? dnv vc... me diz oq botar aq</p>
+      <p>Amandaaaaaaaaaaa</p>
+    </div>
+  </footer>
 
-        </div>
-    </footer>-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
