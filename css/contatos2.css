@@ -144,15 +144,17 @@ body {
 }
 
 main {
-    height: 76vh;
+    height: 86.5vh;
     display: flex;
+    display: flex;
+    background: linear-gradient(to bottom, #890000, #cd121c ); /* Gradiente do vermelho claro para o vermelho escuro */
 }
 
 /* Sessão Feedback */
 
 #sessaofeedback {
     height: 76vh;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,9 +164,97 @@ h1 {
     font-size: 80px;
     color: white;
 }
+
 #enviarfeedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 76vh;
-    width: 50%;
+    width: 60%;
+}
+
+/* caixa feedback */
+
+#caixafeedback {
+  width: 30vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  transition: all 0.3s ease;
+}
+
+#caixafeedback:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+#btn_feedback {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.btn_feedback {
+  font-size: 15px;
+  margin-top: 18px;
+  height: 6vh;
+  border: 1px solid grey;
+  border-radius: 12px;
+  background-color: white;
+  color: rgb(100, 98, 98);
+  width: 28%;
+  text-align: center; /* Alinha o texto no centro do botão */
+  word-wrap: break-word; /* Garante que o texto não ultrapasse os limites do botão */
+  white-space: normal; /* Permite quebra de linha dentro do botão, se necessário */
+  font-size: 1.2rem; /* Ajuste de tamanho de fonte, pode ser aumentado ou diminuído */
+}
+
+.btn_feedback:hover {
+  color: white;
+  font-size: 18px;
+  background-color: #a72020;
+}
+
+#pos:hover, #neg:hover, #sug:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transition-duration: 0.3s;
+} 
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+#nome, #email, #areatexto {
+  width: 25vw;
+  margin-top: 40px;
+}
+
+#nome, #email {
+  border: none;
+  border-bottom: 3px solid brown;
+  outline: none;
+}
+
+#areatexto {
+  border: 3px solid brown;
+}
+
+/* Responsividade: para telas menores */
+@media (max-width: 768px) {
+  .btn_feedback {
+    width: 48%; /* Reduz a largura dos botões em telas menores */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn_feedback {
+    width: 100%; /* Faz os botões ocuparem toda a largura disponível em telas muito pequenas */
+    font-size: 0.9rem; /* Ajuste do tamanho da fonte */
+  }
 }
 
 footer {
@@ -188,7 +278,7 @@ footer {
 }
 
 #insta{
-    background-color: #c27b7b;
+    background: #e365b7;
     color: white;
 }
 #face{
@@ -200,10 +290,16 @@ footer {
     color: white;
 }
 
+
+
 .icons {
     padding: 5px;
     border-radius: 50%;
     margin: 0px 35px 0px 35px;
+}
+.icons:hover {
+  transform: translateY(-4px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
 }
 
 header {

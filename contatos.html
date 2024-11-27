@@ -30,15 +30,34 @@
   
   <main>
       <div id="sessaofeedback">
-          <h1>Sessão <br> Feedback</h1>
+          <h1>Sessão - <br> Feedback</h1>
       </div>
 
       <div id="enviarfeedback">
-          <h2>mó rolê</h2>
-      </div>
+          <div id="caixafeedback">
+              <p>Eu quero fazer uma avaliação...</p>
+              <div id="btn_feedback">
+                <button class="btn_feedback" id="pos">Positiva</button>
+                <button class="btn_feedback" id="neg">Negativa</button>
+                <button class="btn_feedback" id="sug">Sugestão</button>
+              </div>
+              <form action="" method="post">
+
+                <label for="nome">
+                  <input type="text" id="nome" maxlength="25" placeholder="Seu Nome:"></label><br>
+
+                  <label for="email">
+                    <input type="email" id="email" maxlength="40" placeholder="Seu Email:"></label>
+
+                <textarea rows="10" cols="50" id="areatexto" placeholder="Digite sua Avaliação aqui..."></textarea>
+              </form>
+
+              
+            </div>
+        </div>
   </main>
 
-  <footer>
+  <!-- <footer>
     <div id="icons">
       <ion-icon name="logo-facebook" id="face" class="icons"></ion-icon>
       <ion-icon name="logo-instagram" id="insta" class="icons"></ion-icon>
@@ -50,7 +69,7 @@
       <p>Amanda? dnv vc... me diz oq botar aq</p>
       <p>Amandaaaaaaaaaaa</p>
     </div>
-  </footer>
+  </footer> -->
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
