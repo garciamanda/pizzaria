@@ -1,3 +1,23 @@
+console.log("script.js está carregado");
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const buttons = document.querySelectorAll('.btn_feedback');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      if (button.classList.contains('btn_active')) {
+        button.classList.remove('btn_active');
+      } else {
+
+        buttons.forEach(btn => btn.classList.remove('btn_active'));
+
+        button.classList.add('btn_active');
+      }
+    });
+  });
+});
+
 
 // Scroll
 
@@ -41,102 +61,10 @@ function openModal() {
   })
 }
 
-//login 
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var loginButton = document.getElementById('btnLogin-popup');
-//   loginButton.addEventListener('click', function () {
-//       window.location.href = 'login.html';
-//   });
-// });
-
-// login
 
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector(".wrapper");
-  const loginLink = document.querySelector(".login-link");
-  const registerLink = document.querySelector(".register-link");
-  const iconClose = document.querySelector(".icon-close");
-
-  registerLink.addEventListener("click", () => {
-    wrapper.classList.add("active");
-  });
-
-  loginLink.addEventListener("click", () => {
-    wrapper.classList.remove("active");
-  });
-
-  wrapper.classList.add("active-popup");
-
-
-
-  iconClose.addEventListener("click", () => {
-    wrapper.classList.remove("active-popup");
-    window.location.href = "index.html";
-  });
-});
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const addToCartButtons = document.querySelectorAll('.button-hover-background');
-  const cartItemsList = document.getElementById('cart-items');
-  const cartTotalSpan = document.getElementById('cart-total');
-
-  let cartItems = [];
-
-  function addToCart(productTitle, productPrice) {
-    const existingItem = cartItems.find(item => item.title === productTitle);
-
-    if (existingItem) {
-      existingItem.quantity++;
-    } else {
-      cartItems.push({
-        title: productTitle,
-        price: productPrice,
-        quantity: 1
-      });
-    }
-
-  
-    renderCart();
-  }
-
-
-  function renderCart() {
-    cartItemsList.innerHTML = '';
-
-    cartItems.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = `${item.title} x ${item.quantity} - R$${(item.price * item.quantity).toFixed(2)}`;
-      cartItemsList.appendChild(li);
-    });
-
-    updateCartTotal();
-  }
-
-  function updateCartTotal() {
-    const total = cartItems.reduce((accumulator, item) => accumulator + (item.price * item.quantity), 0);
-    cartTotalSpan.textContent = `R$${total.toFixed(2)}`;
-  }
-
-  addToCartButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const productContainer = this.closest('.movie-product');
-      const productTitle = productContainer.querySelector('.product-title').textContent;
-      const productPrice = parseFloat(productContainer.querySelector('.product-price').textContent.replace('R$', ''));
-
-      addToCart(productTitle, productPrice);
-    });
-  });
-});
 
 
 //
@@ -165,6 +93,7 @@ const loginBtn = document.getElementById('btnLogin-popup');
 const loginPopup = document.getElementById('loginPopup');
 const registerPopup = document.getElementById('registerPopup');
 const showRegisterFormBtn = document.getElementById('showRegisterForm');
+const showLoginFormBtn = document.getElementById('showLoginForm');
 const closeButtons = document.querySelectorAll('.close');
 
 // Função para abrir o popup de login
@@ -176,6 +105,12 @@ loginBtn.addEventListener('click', function() {
 showRegisterFormBtn.addEventListener('click', function() {
   loginPopup.style.display = 'none';
   registerPopup.style.display = 'block';
+});
+
+// Função para abrir o popup de login quando clicar em "Entrar" no popup de registro
+showLoginFormBtn.addEventListener('click', function() {
+  registerPopup.style.display = 'none';
+  loginPopup.style.display = 'block';
 });
 
 // Função para fechar os popups
@@ -198,3 +133,5 @@ window.addEventListener('click', function(event) {
     registerPopup.style.display = 'none';
   }
 });
+
+

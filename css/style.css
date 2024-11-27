@@ -925,6 +925,15 @@ body {
   font-size: 14px;
 }
 
+#showLoginForm {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
 /*Tela de registro*/
 #registro {
   text-align: center;
@@ -990,6 +999,11 @@ body {
 #showRegisterForm:hover {
   color: darkblue;
 }
+
+#showLoginForm:hover {
+  color: darkblue;
+}
+
 
 /*Carrinho modelo */
 

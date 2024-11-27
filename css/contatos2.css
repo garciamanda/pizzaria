@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=MontserrMonat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Rock+Salt&display=swap');
 
 
@@ -15,14 +16,15 @@
 }
 
 body {
-    display: flex;
-    flex-flow: column;
-    font-family: 'MontserrMonat, sans-serif';
-  }
-  
+  display: flex;
+  flex-flow: column;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
 ion-icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 :root {
@@ -39,97 +41,6 @@ ion-icon {
   --blue: #56c5db;
 }
 
-div#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--white);
-  z-index: 99999;
-}
-
-.loader .title {
-  color: var(--cor-preto);
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: lighter;
-  text-align: center;
-  font-family: arial;
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-}
-
-/*Carregando*/
-.carregando {
-  font-size: 45px;
-  color: #494a4a;
-  text-indent: -9999em;
-  overflow: hidden;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  display: block;
-  transform: translateZ(0);
-  animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
-  margin-bottom: 35px;
-  margin-left: 20px;
-}
-
-@keyframes mltShdSpin {
-  0% {
-    box-shadow: 0 -0.83em 0 -0.4em,
-      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
-      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-
-  5%,
-  95% {
-    box-shadow: 0 -0.83em 0 -0.4em,
-      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
-      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-
-  10%,
-  59% {
-    box-shadow: 0 -0.83em 0 -0.4em,
-      -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em,
-      -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
-  }
-
-  20% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
-      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
-      -0.749em -0.34em 0 -0.477em;
-  }
-
-  38% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
-      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
-      -0.82em -0.09em 0 -0.477em;
-  }
-
-  100% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
-      0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-}
-
-@keyframes round {
-  0% {
-    transform: rotate(0deg)
-  }
-
-  100% {
-    transform: rotate(360deg)
-  }
-}
 
 
 html {
@@ -145,37 +56,38 @@ body {
 }
 
 main {
-    height: 86.5vh;
-    display: flex;
-    display: flex;
-    background: linear-gradient(to bottom, #890000, #cd121c ); /* Gradiente do vermelho claro para o vermelho escuro */
+  height: 86.5vh;
+  display: flex;
+  display: flex;
+  background: linear-gradient(to bottom, #890000, #cd121c);
+  /* Gradiente do vermelho claro para o vermelho escuro */
 }
 
 /* Sessão Feedback */
 
 #sessaofeedback {
-    height: 76vh;
-    width: 40%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  height: 76vh; /* Mantém a altura da seção */
+  width: 40%; /* Mantém a largura da seção */
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Espaça o conteúdo igualmente */
+  align-items: center; /* Centraliza horizontalmente */
 }
 
-#icons {
-  margin-top: 400px;
-}
+
+
 h1 {
-    font-size: 80px;
-    color: white;
+  font-size: 80px;
+  color: white;
+  margin-top: 20rem;
 }
 
 #enviarfeedback {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 76vh;
-    width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76vh;
+  width: 60%;
 }
 
 /* caixa feedback */
@@ -184,15 +96,15 @@ h1 {
   width: 30vw;
   height: 70vh;
   background-color: white;
-  border-radius: 20px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  padding: 20px; 
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   transition: all 0.3s ease;
 }
 
 #caixafeedback:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #btn_feedback {
@@ -200,6 +112,7 @@ h1 {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .btn_feedback {
   font-size: 15px;
   margin-top: 18px;
@@ -209,10 +122,14 @@ h1 {
   background-color: white;
   color: rgb(100, 98, 98);
   width: 28%;
-  text-align: center; /* Alinha o texto no centro do botão */
-  word-wrap: break-word; /* Garante que o texto não ultrapasse os limites do botão */
-  white-space: normal; /* Permite quebra de linha dentro do botão, se necessário */
-  font-size: 1.2rem; /* Ajuste de tamanho de fonte, pode ser aumentado ou diminuído */
+  text-align: center;
+  /* Alinha o texto no centro do botão */
+  word-wrap: break-word;
+  /* Garante que o texto não ultrapasse os limites do botão */
+  white-space: normal;
+  /* Permite quebra de linha dentro do botão, se necessário */
+  font-size: 1.2rem;
+  /* Ajuste de tamanho de fonte, pode ser aumentado ou diminuído */
 }
 
 .btn_feedback:hover {
@@ -221,23 +138,38 @@ h1 {
   background-color: #a72020;
 }
 
-#pos:hover, #neg:hover, #sug:hover {
-  transform: translateY(-2px); 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+#pos:hover,
+#neg:hover,
+#sug:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition-duration: 0.3s;
-} 
+}
+
+.btn_active {
+  background-color: #820000; /* Cor permanente para o botão clicado */
+  color: white;
+  transform: translateY(0); /* Manter o botão fixo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 form {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-#nome, #email, #areatexto {
+
+#nome,
+#email,
+#areatexto {
   width: 25vw;
   margin-top: 40px;
 }
 
-#nome, #email {
+#nome,
+#email {
   border: none;
   border-bottom: 3px solid brown;
   outline: none;
@@ -250,59 +182,71 @@ form {
 /* Responsividade: para telas menores */
 @media (max-width: 768px) {
   .btn_feedback {
-    width: 48%; /* Reduz a largura dos botões em telas menores */
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    width: 48%;
+    /* Reduz a largura dos botões em telas menores */
+    font-size: 1rem;
+    /* Ajusta o tamanho da fonte */
   }
 }
 
 @media (max-width: 480px) {
   .btn_feedback {
-    width: 100%; /* Faz os botões ocuparem toda a largura disponível em telas muito pequenas */
-    font-size: 0.9rem; /* Ajuste do tamanho da fonte */
+    width: 100%;
+    /* Faz os botões ocuparem toda a largura disponível em telas muito pequenas */
+    font-size: 0.9rem;
+    /* Ajuste do tamanho da fonte */
   }
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #creditos {
-    display: flex;
-    flex-wrap: wrap;  /* Faz os itens quebrarem para a próxima linha */
-    justify-content: center; /* Opcional, para centralizar os itens */
-    align-items: center; /* Opcional, para garantir alinhamento vertical */
-} 
-
-#creditos > p {
-    margin: 0 150px 0px 150px;
-    margin-top: 15px;
-    color: rgb(84, 81, 81);
+  display: flex;
+  flex-wrap: wrap;
+  /* Faz os itens quebrarem para a próxima linha */
+  justify-content: center;
+  /* Opcional, para centralizar os itens */
+  align-items: center;
+  /* Opcional, para garantir alinhamento vertical */
 }
 
-#insta{
-    background: #e365b7;
-    color: white;
+#creditos>p {
+  margin: 0 150px 0px 150px;
+  margin-top: 15px;
+  color: rgb(84, 81, 81);
 }
-#face{
-    background-color: rgb(16, 16, 209);
-    color: white;
+
+#insta {
+  background: #e365b7;
+  color: white;
 }
+
+#face {
+  background-color: rgb(16, 16, 209);
+  color: white;
+}
+
 #ttk {
-    background-color: var(--black);
-    color: white;
+  background-color: var(--black);
+  color: white;
 }
 
 .icons {
-    padding: 5px;
-    border-radius: 50%;
-    margin: 0px 35px 0px 35px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 0px 35px 35px 35px;
 }
+
 .icons:hover {
-  transform: translateY(-4px); /* Eleva o card ao passar o mouse */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+  transform: translateY(-4px);
+  /* Eleva o card ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Sombra mais forte no hover */
 }
 
 header {
@@ -485,7 +429,8 @@ header #logo img {
   align-items: center;
 
 }
-/* From Uiverse.io by adamgiebl */ 
+
+/* From Uiverse.io by adamgiebl */
 #enviar {
   font-size: 20px;
   background: brown;
@@ -499,19 +444,19 @@ header #logo img {
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
-  
+
 }
 
 #enviar:hover {
-  transform: translateY(-4px); 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #enviar span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
-  
+
 }
 
 #enviar svg {
