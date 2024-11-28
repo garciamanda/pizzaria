@@ -147,9 +147,9 @@ h1 {
 }
 
 .btn_active {
-  background-color: #820000; /* Cor permanente para o botão clicado */
+  background-color: #a72020; 
   color: white;
-  transform: translateY(0); /* Manter o botão fixo */
+  transform: translateY(0); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -159,6 +159,7 @@ form {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  
 }
 
 #nome,
@@ -222,17 +223,14 @@ footer {
 }
 
 #insta {
-  background: #e365b7;
   color: white;
 }
 
 #face {
-  background-color: rgb(16, 16, 209);
   color: white;
 }
 
 #ttk {
-  background-color: var(--black);
   color: white;
 }
 
@@ -244,9 +242,7 @@ footer {
 
 .icons:hover {
   transform: translateY(-4px);
-  /* Eleva o card ao passar o mouse */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  /* Sombra mais forte no hover */
 }
 
 header {
@@ -474,3 +470,31 @@ header #logo img {
     transform: translateY(-0.1em);
   }
 }
+
+.rating {
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+.star {
+  font-size: 50px;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.star:hover {
+  color: gold;
+}
+
+.star.selected {
+  color: gold;
+}
+
+#rating-result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
