@@ -342,12 +342,24 @@
       <!-- Popup  Opcional-->
       <div id="popup" class="popup-overlay <?php echo $mostrarPopup ? 'active' : ''; ?>">
         <div class="popup-contents">
-          <h2>Deseja adicionar um avatar?</h2>
-          <p>Você pode adicionar um avatar agora ou fazer isso mais tarde.</p>
-          <div class="popup-buttons">
+          <h2>Deseja adicionar um avatar?</h2><br>
+          <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Você pode adicionar um avatar agora ou fazer isso mais tarde.</p>
+
+          <ion-icon id="iconprofile" name="person-circle-outline"></ion-icon>
+
+          <div class="btao">
+            <button class="butao1">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicionar agora&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <button class="butao2">Talvez mais tarde</button>
+          </div>
+
+
+
+          <!-- <div class="popup-buttons">
             <button id="addNow">Adicionar Agora</button>
             <button id="addLater">Fazer Depois</button>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- Fim popup -->
