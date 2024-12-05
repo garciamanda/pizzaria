@@ -341,52 +341,36 @@
 
       <!-- Popup  Opcional-->
       <div id="popup" class="popup-overlay <?php echo $mostrarPopup ? 'active' : ''; ?>">
-        <div class="popup-contents">
-          <h2>Deseja adicionar um avatar?</h2><br>
-          <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Você pode adicionar um avatar agora ou fazer isso mais tarde.</p>
 
-          <ion-icon id="iconprofile" name="person-circle-outline"></ion-icon>
 
-          <div class="btao">
-            <button class="butao1">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicionar agora&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </button>
-            <button class="butao2">Talvez mais tarde</button>
+        <!-- Popup endereço -->
+
+        <div id="popup2" class="popup-contents">
+          <div class="popup-conteudo">
+            <h2>Onde você quer receber o seu pedido?</h2><br><br>
+
+            <form action="" id="formend" method="post">
+              <img src="images/localizacao.png" id="localizacao" alt=""><br><br>
+
+              <label for="rua">
+                <input type="text" class="endereço" id="rua" maxlength="100" placeholder=" Rua:"></label><br>
+
+              <div id="bairroenum">
+
+                <label for="bairro">
+                  <input type="text" class="endereço2" id="bairro" maxlength="50" placeholder=" Bairro:"></label><br>
+
+                <label for="numero">
+                  <input type="number" class="endereço2" id="numero" maxlength="6" placeholder=" Nº da casa:"></label><br>
+
+              </div>
+            </form>
+          
+            <button class="btnend">Pronto!</button>
           </div>
-
-
-
-          <!-- <div class="popup-buttons">
-            <button id="addNow">Adicionar Agora</button>
-            <button id="addLater">Fazer Depois</button>
-          </div> -->
         </div>
-      </div>
-      <!-- Fim popup -->
 
-
-      <!--<div class="Box">
-            <div class="Carrinho">
-                <h1>Carrinho</h1>
-            </div>
-            <div class="Total">
-                <strong><p>Total</p></strong>
-                <div class="preco">R$ 0.00</div>
-            </div>
-            <div class="Quantidade">
-                <strong><p>Quantidade</p></strong>
-                    <div class="input-quantidade">
-                       <input type="number" name="quantidade" id="quantidade" value="quantidade">
-                    </div>
-            </div>
-            <div class="Itens">
-               <strong><p>Itens</p></strong>
-            </div>
-            <div class="Finalizar-Compra">
-                <button>Finalizar Compra</button>
-            </div>
       </div>
-    -->
 
     </section>
   </main>

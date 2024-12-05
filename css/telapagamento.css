@@ -362,6 +362,7 @@ input[type=number]::-webkit-inner-spin-button,
 #metodospay{
   width: 35%;
   height: 35%;
+  margin-top: 20px;
 }
 
 #icon {
@@ -370,11 +371,11 @@ input[type=number]::-webkit-inner-spin-button,
  align-items: center;
 }
 
-
 h1 {
   color: white;
   font-size: 30px;
 }
+
 
 
 /* caixa feedback */
