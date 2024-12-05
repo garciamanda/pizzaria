@@ -62,7 +62,7 @@ main{
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 67vh;
+    height: 72vh;
 }
 h2{
     text-align: center;
@@ -78,14 +78,26 @@ form label{
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
-form input[type="file"]{
+form input[type="file"],
+form input[type="number"]{
     width: 100%;
     padding: 8px;
     margin-bottom: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+
 }
+
+form input[type="number"]{
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
 
 .avatar-div {
     position: relative;
@@ -157,6 +169,7 @@ form input[type="file"]{
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn:hover{
@@ -166,11 +179,11 @@ form input[type="file"]{
 .link-home{
     display: block;
     text-align: center;
-    margin-top: 10px;
     font-size: 15px;
     color: #cd121c;
     text-decoration: none;
     transition: color 0.3s ease;
+    margin-top: 10px;
 }
 
 .link-home:hover{
@@ -179,8 +192,8 @@ form input[type="file"]{
 
 .user-info i.bx.bxs-user-circle {
     cursor: pointer;
-    border-radius: 50%; /* Borda semelhante à imagem */
-    background: #f0f0f0; /* Fundo para parecer com a ausência de imagem */
+    border-radius: 50%;
+    background: #f0f0f0; 
 }
 
 
@@ -352,3 +365,8 @@ i.fas.fa-user-circle.avatar-icon {
     line-height: 120px; /* Alinha o ícone verticalmente */
 }
 
+#addcepicon {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}

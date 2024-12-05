@@ -64,15 +64,305 @@ main {
   height: 76vh; 
   width: 40%;
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
+  flex-direction: column;  
   align-items: center; 
+  gap: 8vh;
 }
 
 #titulos {
-  font-size: 100px;
+  font-size: 30px;
 }
 
+.payment-btn {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  width: 80%;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.payment-btn:hover {
+transform: translateY(-4px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.payment-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.payment-icon:hover {
+  background: #b7c845;
+}
+
+.payment-icon > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.payment-icon:hover svg {
+  transform: translateX(5px);
+}
+
+.payment-icon:active {
+  transform: scale(0.95);
+}
+
+
+/*=========*/
+
+#tela_pay {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 76vh;
+  width: 60%;
+}
+
+.sel_met {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 65px;
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  border-radius: 50px;
+}
+
+#tela_pix {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 65px;
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  border-radius: 50px;
+}
+
+#tela_cartdeb {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 65px;
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  border-radius: 50px;
+}
+h2 {
+  margin-top: 25px;
+}
+
+#titsel {
+  margin-top: 1rem;
+}
+
+.debt {
+  width: 30vw;
+  height: 5vh;
+  margin: 12px 0px 12px 0px;
+  text-indent: 5px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.debt2 {
+  width: 14.9vw;
+  height: 5vh;
+  margin: 12px 0px 12px 0px;
+  text-indent: 5px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+#formdebt {
+  margin-top: 15px;
+}
+
+#enviardebt {
+  margin-top: 30px;
+  width: 12vw;
+}
+
+
+#tela_cartcred {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 65px;
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  border-radius: 50px;
+}
+h2 {
+  margin-top: 25px;
+}
+
+.cred {
+  width: 30vw;
+  height: 5vh;
+  margin: 12px 0px 12px 0px;
+  text-indent: 5px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.cred2 {
+  width: 14.9vw;
+  height: 5vh;
+  margin: 12px 0px 12px 0px;
+  text-indent: 5px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+#formcred {
+  margin-top: 15px;
+}
+
+#enviarcred {
+  margin-top: 30px;
+  width: 12vw;
+}
+
+
+#tela_dinheiro {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 65px;
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  border-radius: 50px;
+}
+
+
+/*Retirar adição e subtração dos inputs*/ 
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+/* From Uiverse.io by iZOXVL */ 
+.boton-elegante {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.boton-elegante::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(146, 27, 27, 0.938) 0%,
+    rgba(174, 38, 38, 0.646) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #772020;
+  background: #7f1818;
+}
+
+
+/* From Uiverse.io by kamehame-ha */ 
+#qrcode, #dinheiro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  margin-top: 20%;
+  padding: 8px;
+}
+
+#dinheiro {
+  padding: 20px;
+  margin-top: 32.5%;
+}
+
+#qrcode, #dinheiro #text {
+  color:#181717;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+
+#qrcode:hover{
+  background-color: lightgray;
+  font-size: 15px;
+}
+
+#dinheiro:hover {
+  background-color: lightgray;
+  font-size: 18px;
+}
+
+#qrcode, #dinheiro:hover #text {
+  color: #181717;
+}
+
+#img-qr {
+  width: 40px;
+  height: 40px;
+}
+#img-dinheiro {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+#metodospay{
+  width: 35%;
+  height: 35%;
+}
 
 #icon {
  display: flex;
@@ -83,15 +373,9 @@ main {
 
 h1 {
   color: white;
+  font-size: 30px;
 }
 
-#tela_pay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 76vh;
-  width: 60%;
-}
 
 /* caixa feedback */
 
@@ -126,9 +410,9 @@ h1 {
   color: rgb(100, 98, 98);
   width: 28%;
   text-align: center;
-  /* Alinha o texto no centro do botão */
+ 
   word-wrap: break-word;
-  /* Garante que o texto não ultrapasse os limites do botão */
+ 
   white-space: normal;
   /* Permite quebra de linha dentro do botão, se necessário */
   font-size: 1.2rem;
@@ -499,5 +783,7 @@ header #logo img {
   margin-top: 20px;
   font-size: 18px;
 }
+
+
 
 
